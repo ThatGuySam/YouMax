@@ -9,9 +9,24 @@
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
     </header>
-    <slot/>
+
+    <main>
+      <slot/>
+    </main>
+    
+    <Footer />
   </div>
 </template>
+
+<script>
+  import Footer from '~/components/layouts/Footer.vue'
+
+  export default {
+    components: {
+      Footer
+    }
+  }
+</script>
 
 <static-query>
 query {
